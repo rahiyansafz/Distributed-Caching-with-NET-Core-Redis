@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CachingStrategies", "Cachin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreRedis", "AspNetCoreRedis\AspNetCoreRedis.csproj", "{DF6BFEA2-A520-44D7-8713-5F6667E37FA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisWebApp", "RedisWebApp\RedisWebApp.csproj", "{A2495C58-9A38-4F68-8731-438404E481B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisWebApp", "RedisWebApp\RedisWebApp.csproj", "{A2495C58-9A38-4F68-8731-438404E481B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisConfig", "RedisConfig\RedisConfig.csproj", "{D342DB00-BA5C-4179-87F2-750B00165F79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisConfig", "RedisConfig\RedisConfig.csproj", "{D342DB00-BA5C-4179-87F2-750B00165F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisWithOutputCaching", "RedisWithOutputCaching\RedisWithOutputCaching.csproj", "{FD30B7C9-C450-40D0-AAAD-F6BABC678FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D342DB00-BA5C-4179-87F2-750B00165F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D342DB00-BA5C-4179-87F2-750B00165F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D342DB00-BA5C-4179-87F2-750B00165F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD30B7C9-C450-40D0-AAAD-F6BABC678FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD30B7C9-C450-40D0-AAAD-F6BABC678FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD30B7C9-C450-40D0-AAAD-F6BABC678FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD30B7C9-C450-40D0-AAAD-F6BABC678FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
