@@ -1,6 +1,6 @@
 ﻿using RedisConfig;
 
-DistributedCacheTtl distributedCacheTtl = new DistributedCacheTtl();
+DistributedCacheTtl distributedCacheTtl = new();
 distributedCacheTtl.Run();
 
 RedisLruPolicyCheck.Run();
