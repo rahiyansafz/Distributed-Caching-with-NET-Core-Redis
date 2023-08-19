@@ -23,7 +23,7 @@ public class WriteBackCache : IDistributedCache
         throw new NotImplementedException();
     }
 
-    private List<KeyValuePair<string, byte[]>> writeBackBuffer = new();
+    private readonly List<KeyValuePair<string, byte[]>> _writeBackBuffer = new();
     private readonly Task _backgroundTask;
 
     private async Task WriteBack()
@@ -32,7 +32,7 @@ public class WriteBackCache : IDistributedCache
         {
             try
             {
-                if (writeBackBuffer.Count > 100)
+                if (_writeBackBuffer.Count > 100)
                 {
                     // build batch update
                 }
@@ -49,7 +49,7 @@ public class WriteBackCache : IDistributedCache
     public void Set(string key, byte[] value, DistributedCacheEntryOptions options)
     {
         _secondary.Set(key, value);
-        writeBackBuffer.Add(KeyValuePair.Create(key, value));
+        _writeBackBuffer.Add(KeyValuePair.Create(key, value));
     }
 
     public Task SetAsync(string key, byte[] value, DistributedCacheEntryOptions options, CancellationToken token = new CancellationToken())
