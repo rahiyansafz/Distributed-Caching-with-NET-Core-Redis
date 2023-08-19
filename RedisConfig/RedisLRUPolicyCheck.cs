@@ -5,7 +5,7 @@ using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Microsoft.Extensions.Options;
 
 namespace RedisConfig;
-internal class RedisLruPolicyCheck
+internal static class RedisLruPolicyCheck
 {
     public static void Run()
     {
